@@ -1,0 +1,38 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<title>Loja de Livros</title>
+</head>
+<body>
+	<h1>Produtos Disponíveis</h1>
+
+	<table class="table">
+		<thead>
+			<tr>
+
+				<th>Identificação</th>
+				<th>Nome</th>
+				<th>Descrição</th>
+				<th>Valor</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="livro : ${livros}">
+				<td th:text="${livro.getId()}" />
+				<td th:text="${livro.getTitle()}" />
+				<td th:text="${livro.getDescription()}" />
+				<td th:text="${livro.getPrice()}" />
+			</tr>
+		</tbody>
+	</table>
+
+</body>
+</html>

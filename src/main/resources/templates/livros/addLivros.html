@@ -1,0 +1,45 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<title>Loja de Livros</title>
+</head>
+<body>
+
+	<h2 class="text-center">Adicionar Livros</h2>
+
+	<div class="container">
+		<form name="form" action="LoginController" method="post">
+			<div class="row mt-3">
+				<div class="offset-3 col-mid-6">
+					<div class="input-group mb-3">
+						<span class="input-group-text">Usuário:</span> <input
+							name="usuario" type="text" class="form-control" />
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="offset-3 col-mid-6">
+					<div class="input-group mb-3">
+						<span class="input-group-text">Usuário:</span> <input name="senha"
+							type="text" class="form-control" />
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="offset-6 col-md-3">
+					<input class="btn btn-success" type="submit" value="Enviar" />
+				</div>
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>
